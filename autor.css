@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("floor-gray.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+img {
+  max-width: 100%;
+}
+header img {
+  height: 70px;
+  width: 70px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+header h2 {
+  margin-left: 8px;
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-end;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+}
+header nav a:hover {
+  color: grey;
+}
+main {
+  display: flex;
+}
+aside {
+  width: 25%;
+  position: fixed;
+  height: 100vh;
+
+  text-align: center;
+
+}
+aside div {
+  margin-top: 30%;
+}
+aside h2 {
+  color: white;
+}
+aside p {
+  margin-top: 12%;
+}
+aside p a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 8px;
+}
+article {
+  width: 75%;
+  left: 25%;
+  position: relative;
+}
+article p {
+  color: white;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+}
+#prvideo {
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("figuremajmuna.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+height: 100vh;
+padding-top: 1%;
+}
+#prvideo p {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+#prvideo a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 6px 14px;
+}
+#drugideo {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("abstractarchi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 110vh;
+  padding-top: 1%;
+  position: relative;
+}
+#drugideo p {
+  text-align: center;
+}
+#drugideo p a {
+  color: white;
+  text-decoration: none;
+}
+#drugideo p a:hover {
+  text-transform: uppercase;
+}
+#trecideo {
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("figuremajmuna.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+}
+#trecideo h3 {
+  color: white;
+  text-align: center;
+}
+#trecideo div {
+margin: 3.7%;
+}
+footer {
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 748px){
+  header {
+    flex-direction: column;
+align-items: center;
+margin-bottom: 12px;
+  }
+  header div {
+      flex-direction: column;
+align-items: center;
+  }
+  header nav {
+      flex-direction: column;
+align-items: center;
+  }
+  header nav a {
+    padding-left: 0;
+    margin-bottom: 18px;
+  }
+  aside {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid white;
+  }
+  aside p {
+    margin-top: 0;
+  }
+  aside p a {
+    border: 0;
+    padding: 0;
+  }
+  aside div {
+    margin-top: 3%;
+  }
+  article {
+    width: 100%;
+    left: 0;
+  }
+  main {
+    flex-direction: column;
+  }
+  #trecideo{
+    flex-direction: column;
+    align-items: center;
+  }
+}

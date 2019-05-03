@@ -5,8 +5,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+body, html {
+  height: 100%;
+}
 img {
   max-width: 100%;
+  height: auto;
 }
 p {
   letter-spacing: 0.02em;
@@ -121,6 +125,7 @@ align-items: center;
   }
   main {
     flex-direction: column;
+    align-items: center;
   }
   article {
     width: 90%;
